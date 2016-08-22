@@ -1,0 +1,37 @@
+{
+  "name": "aaalac",
+  "version": "0.1.0",
+  "description": "Web de AAALAC",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xoyoc/Nva_AAALAC.git"
+  },
+  "keywords": [
+    "web",
+    "aaalac"
+  ],
+  "author": "Antonio Xoyoc Becerra Farias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xoyoc/Nva_AAALAC/issues"
+  },
+  "homepage": "https://github.com/xoyoc/Nva_AAALAC#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.14.0",
+    "css-mqpacker": "^5.0.1",
+    "csswring": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "lost": "^7.0.4",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
+    "postcss-mixins": "^5.0.1",
+    "postcss-nested": "^1.0.0",
+    "rucksack-css": "^0.8.6"
+  }
+}

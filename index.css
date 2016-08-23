@@ -14,13 +14,53 @@
 	--violetac:#982265;
 }
 
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
 .header{
 	display: flex;
 	flex-direction: column;
 	z-index: 10;
 	&-menu{
 		position: relative;
+		background: var(--azulc);
+		width: 13%;
+		&-lista{
+			display: flex;
+			list-style: none;
+			direction: column;
+			&-items{
+				margin: .3em .5em;
+			}
+		}
 	}
+	&-carrusel{
+		z-index: -1;
+		display: flex;
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 80%;
+	    overflow: auto;
+	    white-space: nowrap;
+	    scroll-snap-points-x: repeat(100%);
+	    scroll-snap-type: mandatory;
+	    &-Imagenes{
+	    	width: 100%;
+	    	height: 100%;
+	    	display: inline-block;
+	    	scroll-snap-align: none start;
+	    }
+	}
+}
+
+.iconoSocial{
+	fill: currentColor;
+	width: 25px;
 }
 
 svg{
@@ -29,24 +69,43 @@ svg{
 	align-self: flex-start;
 }
 
-.carrusel{
-	z-index: -1;
-	display: flex;
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 90%;
-    overflow: auto;
-    white-space: nowrap;
-    scroll-snap-points-x: repeat(100%);
-    scroll-snap-type: mandatory;
-    &-Imagenes{
-    	width: 100%;
-    	height: 100%;
-    	display: inline-block;
-    	scroll-snap-align: none start;
-    }
+
+.row{
+	lost-utility: clearfix;
+}
+
+.acerca, .servicios{
+	lost-column:1/2;
+}
+
+.icono_aaalac{
+	width: 200px;
+}
+
+.acerca{
+	font-size: 1.5em;
+	margin: 1em;
+	padding: 1em;
+	text-align: center;
+	>h2{
+		color:var(--azulf);
+		margin: .3em 0;
+	}
+	>p{
+		padding: .5em;
+	}
+	>boton_amarillo{
+		font-size: 1.2em !important;
+		margin: .3em 0;
+	}
+}
+
+.boton_amarillo{
+	background: var(--amarillo);
+	color:white;
+	text-transform: uppercase;
+	border:none;
+	padding: .5em;
 }
 
 .footer{
@@ -55,6 +114,6 @@ svg{
 		text-align: center;
 		color:white;
 		font-size: .8em;
-		padding: .1em 0;
+		padding: .5em 0;
 	}
 }

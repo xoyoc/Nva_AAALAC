@@ -14,13 +14,13 @@
 	--violetac:#982265;
 }
 /*Seccion de etiquetas*/
-
 *
 {
 	margin: 0;
 	padding: 0;
 	color:white;
 }
+
 /*Seccion de Clases*/
 .carousel-indicators{
 	left: 10%;
@@ -72,8 +72,13 @@
 	lost-utility: clearfix;
 }
 
-.acerca, .servicios{
+.acerca{
 	lost-column:1/2;
+	height: 100%;
+}
+.servicios{
+	lost-column:3/7;
+	height: 100%;
 }
 
 .icono_aaalac{
@@ -90,6 +95,7 @@
 	padding: 1em;
 	text-align: center;
 	>p{
+		color: black;
 		padding: .5em;
 	}
 	>boton_amarillo{
@@ -98,13 +104,23 @@
 	}
 }
 .servicios{
+	position: absolute;
+	right: 5%;
+	top: 85%;
 	background: var(--azul);
 	lost-utility: clearfix;
 	&-icono{
-		width: 100px;
+		width: 80px;
 	}
 	&-columna{
-		lost-column:1/3;
+		lost-column:2/6;
+	}
+	&-columna::first-child>&-icon{
+		width: 60px;
+	}
+	&-titulos{
+		color:white;
+		text-align: center;
 	}
 }
 
